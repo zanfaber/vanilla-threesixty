@@ -122,14 +122,13 @@ export class Threesixty {
       imgList.classList.add('fadingIn');
     }, 0)
 
-    this.defaultOptions.ready = true;
-
     this.initEvents();
     this.refresh();
 
+    this.defaultOptions.ready = true;
+    this.defaultOptions.onReady();
+
   };
-
-
 
   /**
    * @method initEvents
@@ -422,6 +421,11 @@ export class Threesixty {
      * @type {Boolean}
      */
     responsive: false,
+    /**
+     * Callback triggers once all images are loaded and ready to render on the screen
+     * @type {Funtion}
+     */
+    onReady: function() {},
     /**
      * Zero Padding for filenames
      * @type {Boolean}
