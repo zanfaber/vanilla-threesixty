@@ -30,11 +30,12 @@ Just copy the files and modify as you prefer; in my case I set up the code as a 
 	    ext: '.jpg', // extention for the assets
 	    height: 800,
 	    width: 1280,
-	    responsive: true
+	    responsive: true,
+	    onReady: function(){ }
     });
 
 
 ## To do
+  - [ x ] "onReady" callback
   - [ ] Cleaner code
-  - [ ] "onReady" callback
   - [ ] More options like the original plugin?
